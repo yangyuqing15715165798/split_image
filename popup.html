@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    #preview {
+      max-width: 100%;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+    }
+    .button {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .button:disabled {
+      background-color: #cccccc;
+    }
+    #status {
+      margin-top: 10px;
+      padding: 5px;
+      color: #333;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+    }
+    #imageInput {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="file" id="imageInput" accept="image/*">
+  <img id="preview" style="display: none;">
+  <button id="splitButton" class="button" disabled>分割图片</button>
+  <div id="status">请选择一张图片</div>
+  <script src="popup.js"></script>
+</body>
+</html> 
